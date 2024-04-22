@@ -1,1 +1,1 @@
-# AiEcosystemForTheAbsoluteBeginners
+# AIEcosystemForTheAbsoluteBeginners
