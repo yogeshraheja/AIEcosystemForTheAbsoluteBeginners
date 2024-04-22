@@ -6,10 +6,10 @@ api = boto3.client('rekognition')
 
 def lambda_handler(event, context):
     #provide the name of your S3 bucket in the sbucket variable 
-    sbucket = "thinknyxdemo1"     
+    sbucket = "__bucket-name__"     
 
     #name of the image in the image variable
-    image = "Diya.jpeg"  
+    image = "__image-name__.jpeg"  
 
     #using the detect_faces method of the Rekognition client object
     result = api.detect_faces(Image = {'S3Object':{'Bucket': sbucket, 'Name': image}}, Attributes=['ALL']) 
